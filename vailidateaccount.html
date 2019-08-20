@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Account</title>
+    <input type="text" id ="input">
+    <button onclick="isValidateAccount();">check </button><br/>
+    <output id="output" ></output>
+</head>
+<body>
+<script>
+
+function isValidateAccount() {
+    let a = document.getElementById("input").value;
+    let regexp = /^[a-z0-9]{6,10}$/;
+    document.getElementById("output").innerHTML = regexp.test(a);
+
+}
+
+</script>
+</body>
+</html>
